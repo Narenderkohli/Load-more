@@ -1,3 +1,4 @@
+<div class="lodmore-btn"><a href="#" id="loadMore">LOAD MORE</a></div>
 <style>
 
 .content {
@@ -10,11 +11,12 @@
   background-color: transparent !important;
   pointer-events: none;
   }</style>
+
  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
       $(document).ready(function(){
-  $(".content").slice(0, 4).show();
+  $(".content").slice(0, 8).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
     $(".content:hidden").slice(0, 4).slideDown();
@@ -23,5 +25,4 @@
     }
   });
   
-});
-    </script>
+})</script>
